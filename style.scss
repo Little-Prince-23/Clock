@@ -1,34 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 body {
-  font-family: "Mouse Memoirs", sans-serif;
+  transition: all 0.1s ease-in-out;
+  font-family: 'Orbitron', sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  background-color: #fff;
+  height: 95vh;
+  background-color: black;
   #clock {
-    background-color: red;
-    color: yellow;
-    font-size: 5rem;
+    background-color: black;
+    color: green;
+    font-size: 8rem;
+    border: 3px solid green;
     border-radius: 3rem 0 3rem 0;
     box-shadow: 13px 10px 207px 0px rgba(0, 0, 0, 0.61);
     -webkit-box-shadow: 13px 10px 207px 0px rgba(0, 0, 0, 0.61);
     -moz-box-shadow: 13px 10px 207px 0px rgba(0, 0, 0, 0.61);
     padding: 1rem;
-    max-width: 350px;
-    min-width: 350px;
+    max-width: 1050px;
+    min-width: 1050px;
     text-align: center;
   }
+  #other{
+    width: 1050px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #date{
+      color: green;
+      font-size: 2rem;
+    }
+    #year{
+      color: green;
+      font-size: 2rem;
+    }
+    #week{
+      color: green;
+      font-size: 2rem;
+    }
+  } 
 }
 
 @media only screen and (max-width: 768px) {
     body{
-        #clock{
-            font-size: 4rem;
-            min-width: 300px;
-            max-width: 300px;
+      width: 100%;
+      #clock{
+        border: none;
+        
+        font-size: 3rem;
+          
         }
+      #other{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
     }
     
 }
